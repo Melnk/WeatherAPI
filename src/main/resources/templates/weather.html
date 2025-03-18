@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Погода в <span th:text="${city}"></span></title>
+    <style>
+        .weather-info {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .weather-info h2 {
+            text-align: center;
+        }
+        .weather-info p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="weather-info">
+    <h2>Погода в <span th:text="${city}"></span></h2>
+    <p><strong>Температура:</strong> <span th:text="${weather.main.temp}"></span>°C</p>
+    <p><strong>Ощущается как:</strong> <span th:text="${weather.main.feelsLike}"></span>°C</p>
+    <p><strong>Погода:</strong> <span th:text="${weather.weather[0].main}"></span> (<span th:text="${weather.weather[0].description}"></span>)</p>
+    <p><strong>Влажность:</strong> <span th:text="${weather.main.humidity}"></span>%</p>
+    <p><strong>Давление:</strong> <span th:text="${weather.main.pressure}"></span> hPa</p>
+    <a href="/">Назад</a>
+</div>
+</body>
+</html>
