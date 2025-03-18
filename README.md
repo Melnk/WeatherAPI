@@ -30,4 +30,19 @@
   spring.datasource.password=ВАШ ПАРОЛЬ
   spring.jpa.hibernate.ddl-auto=update
 ```
+### 3. Получите API-ключ OpenWeatherMap:
+
+Зарегистрируйтесь на OpenWeatherMap и получите API-ключ.
+
+Добавьте ключ в application.properties:
+```bash
+openweathermap.api.key=ваш_api_ключ
+```
 ## 📸 Скриншоты
+**Главная страница**
+![image](https://github.com/user-attachments/assets/fddb902d-4d5a-4d5e-b2ba-01386090cead)
+**Вывод погоды**
+![image](https://github.com/user-attachments/assets/67b392db-8ea2-41d3-b4ca-bbfc21821251)
+**Обработка ошибок**
+![image](https://github.com/user-attachments/assets/1ef18ca5-6349-4e6f-bad0-8143b92866cd)
+
